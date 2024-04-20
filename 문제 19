@@ -1,0 +1,54 @@
+import itertools
+
+
+
+d
+def is_valid_schedule(schedule, constraints):
+    for constraint in constraints:
+        if constraint[0] in schedule and constraint[1] in schedule:
+            if abs(schedule.index(constraint[0]) - schedule.index(constraint[1])) == 1:
+                return False
+    return True
+
+def find_schedule(employees, tasks, constraints):
+    possible_schedules = list(itertools.permutations(tasks))
+    for schedule in possible_schedules:
+        
+      
+if is_valid_schedule(schedule, constraints):
+            
+            re
+return schedule
+    return None
+
+employees = [
+employee
+"Alice", "Bob", "Charlie"]
+tasks = ["Task1", "Task2", "Task3"]
+constraints = [("Alice", "Task1"), ("Bob", "Task2")]
+
+schedule = find_schedule(employees, tasks, constraints)
+
+
+schedule = find_schedule(employees, tasks, constraints)
+
+schedule = find_schedule(employees, tasks, c
+
+schedule = find_schedule(employe
+
+schedule = find_sc
+
+sche
+
+i
+if schedule:
+    
+    pr
+print("일정:", schedule)
+
+el
+else:
+    
+   
+print("일정을 찾을 수 없습니다.")
+

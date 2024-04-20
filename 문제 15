@@ -1,0 +1,107 @@
+def find_hamiltonian_cycle(graph):
+    num_vertices = 
+    num_vertice
+len(graph)
+    
+
+    start_vertex = 
+    start_vertex
+0
+    cycle = [start_vertex]
+
+    
+    cycle = [start_vertex]
+
+    
+while True:
+        found = False
+        
+   
+        for next_vertex in range(num_vertices):
+            
+     
+if graph[cycle[-1]][next_vertex] == 1 and next_vertex not in cycle:
+                cycle.append(next_vertex)
+                found = 
+                cycle.append(next_vertex)
+                f
+
+                cycle.append(
+True
+                
+             
+break
+
+        
+        if len(cycle) == num_vertices and graph[cycle[-1]][cycle[0]] == 1:
+            cycle.append(cycle[
+            cycle.append(cycle
+
+            cycle
+
+    
+0])
+            
+       
+return cycle
+
+        
+
+     
+
+        
+      
+if not found:
+            
+            r
+
+      
+return None
+
+
+graph = [
+    [
+graph = [
+  
+
+graph 
+0, 1, 1, 1],
+    [1, 0, 1, 1],
+    [
+    
+1, 1, 0, 1],
+    [
+   
+1, 1, 1, 0]
+]
+
+
+]
+
+cycle = find_hamiltonian_cycle(graph)
+
+
+cycle = find_hamiltonian_cycle(graph)
+
+cycle = find_hamiltonian_cycle(gra
+
+cycle = find_hamiltonian_cycle
+
+cycle = find_hamiltonian_c
+
+cycle = find_hamiltoni
+
+cycle = find_hamil
+
+cycle = find_h
+
+cycle = f
+
+cycl
+
+if cycle:
+    print("해밀토니안 사이클:", ' -> '.join([str(vertex) for vertex in cycle]))
+else:
+    
+    p
+print("해밀토니안 사이클을 찾지 못했습니다.")
